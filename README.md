@@ -14,3 +14,10 @@ Unix-based Systems (Linux, macOS): Cron Job: Open the terminal. Open the crontab
 
 /path/to/python /path/to/your/script.py This line schedules the script to run every minute. You can customize the schedule based on your needs. Save and exit the editor. Now, your script will run in the background according to the schedule you set using cron.
 Keep in mind that running a script continuously in the background may have resource implications, and you should consider the impact on system performance. Additionally, make sure your script handles errors gracefully to avoid unexpected behavior.
+
+
+Scheduling your script:
+
+schtasks /create /tn "Run Regex Script" /tr "C:\Python39\python.exe C:\path\to\your\script\Regex.py" /sc weekly /d MON /st 09:00
+
+schtasks /create /tn "Run Filetype Script" /tr "C:\Python39\python.exe C:\path\to\your\script\Filetype.py" /sc weekly /d MON /st 09:00

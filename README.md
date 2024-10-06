@@ -21,3 +21,9 @@ Scheduling your script:
 schtasks /create /tn "Run Regex Script" /tr "C:\Python39\python.exe C:\path\to\your\script\Regex.py" /sc weekly /d MON /st 09:00
 
 schtasks /create /tn "Run Filetype Script" /tr "C:\Python39\python.exe C:\path\to\your\script\Filetype.py" /sc weekly /d MON /st 09:00
+
+
+Automate 
+
+
+![desciptipn](https://github.com/user-attachments/assets/08fa615d-d1e7-450b-829a-26d0e51802ce)
